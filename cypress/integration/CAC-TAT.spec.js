@@ -42,8 +42,9 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('#firstName').type('Veronica')
         cy.get('#lastName').type('Negreiro')
         cy.get('#email').type('vnsilva@paschoalotto.com.br')
-        cy.get('#open-text-area').type('Teste')
         cy.get('#phone-checkbox').click()
+        cy.get('#open-text-area').type('Teste')
+        cy.contains('button', 'Enviar').click()
        
         cy.get('.error').should('be.visible')
     })
