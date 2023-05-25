@@ -225,7 +225,7 @@ it('faz uma requisição HTTP', () => {
         })
 })
 
-it.only('Encontre o gato', () => {
+it('Encontre o gato', () => {
     cy.get('#cat')
         .invoke('show')
         .should('be.visible')
