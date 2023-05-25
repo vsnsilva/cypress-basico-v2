@@ -1,5 +1,9 @@
-it('tsta a página da política de privacidade de forma independentee', () => {
-    cy.visit('./src/privacy.html')
+Cypress._.times(5, () => {
 
-    cy.contains('Talking About Testing').should('be.visible')
+    it('tsta a página da política de privacidade de forma independentee', () => {
+        cy.visit('./src/privacy.html')
+    
+        cy.contains('Talking About Testing').should('be.visible')
+    })
+
 })
